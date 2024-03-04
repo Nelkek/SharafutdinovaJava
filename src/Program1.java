@@ -54,11 +54,19 @@ public class Program1 {
             if (choice2 == 1) {
                 result2 = (double) a / b;
                 System.out.println("Результат деления " + a + " на " + b + " равен " + result2);
-                break;
+                if(b == 0) {
+                    System.out.println("На ноль делить нельзя");
+                    break;
+                }
+
             } else if (choice2 == 2) {
-                result2 = (double) b  / a;
-                System.out.println("Результат деления  " + b + " на " + a  + " равен " + result2);
+            result2 = (double) b / a;
+            System.out.println("Результат деления  " + b + " на " + a + " равен " + result2);
+            if (a  == 0) {
+                System.out.println("На ноль делить нельзя");
                 break;
+
+        }
             } else {
                 System.out.println("Неверный выбор числа для вычитания");
             }
